@@ -968,7 +968,7 @@ scale3D
 	border-color: white;
 	line-height: 60px;
 	font-size: 20px;
-	margin-left: 3px;
+	/* margin-left: 3px; */
 	color: gray;
 	opacity: 0.5;
 }
@@ -1045,7 +1045,7 @@ scale3D
 
 .overlay::before {
 	content: '';
-	background: rgba(0, 0, 0, 0.63);
+	background: rgba(0, 0, 0, 0.23);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1985,7 +1985,7 @@ scale3D
 
 .social-icon ul li a {
 	background-color: transparent;
-	border: 1px solid transparent;
+	/* border: 1px solid transparent; */
 	display: inline;
 	height: auto;
 	width: auto;
@@ -2555,143 +2555,104 @@ blockquote {
 .social-media {
 	position: fixed;
 	display: none;
+	font-size:20px;
 	left: 8px;
 	z-index: 1;
-	opacity: 0.5;
-	
+	opacity: 0.5;	
+}
+
+@media ( max-width : 1080px) {
+	.social-media {
+	font-size:45px;
+	opacity: 0.3;	
+}
+
+}
+
+@media ( max-width : 992px) {
+	.social-media {
+	font-size:40px;
+	opacity: 0.3;	
+}
+
+}
+@media ( max-width : 580px) {
+	.social-media {
+	font-size:30px;
+	opacity: 0.3;	
+}
+}
+
+@media ( max-width : 480px) {
+	.social-media {
+	font-size:25px;
+	opacity: 0.3;
+}
+}
+
+.social-media:hover {
+	background: transparent;
+	opacity: 1;
+	color: #fff;
+	transform: scale(1.2);
 }
 
 .left-m-3 {
 	margin-left: 3px;	
 }
 
-
-/*uncomment if want different animation  */
-/* .icon-1 {
-	bottom: 56%;
-	animation: myfirst-icon-1 2s 1;
-}
-@keyframes myfirst-icon-1 {
-  0%  {background: transparent; left: 8px; bottom: -50px;}
-100% {background: transparent; left: 8px; bottom: 56%;}
-}
-
-.icon-2 {
-	bottom: 52%;
-	animation: myfirst-icon-2 1.8s 1;
-}
-@keyframes myfirst-icon-2 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 52%;}
-}
-
-.icon-3 {
-	bottom: 48%;
-	animation: myfirst-icon-3 1.6s 1;
-}
-@keyframes myfirst-icon-3 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 48%;}
-}
-
-.icon-4 {
-	bottom: 44%;
-	animation: myfirst-icon-4 1.4s 1;
-}
-@keyframes myfirst-icon-4 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 44%;}
-}
-
-.icon-5 {
-	bottom: 40%;
-	animation: myfirst-icon-5 1.2s 1;
-}
-@keyframes myfirst-icon-5 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 40%;}
-}
-
-.icon-6 {
-	bottom: 36%;
-	animation: myfirst-icon-6 1.0s 1;
-}
-@keyframes myfirst-icon-6 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 36%;}
-}
-
-.icon-7 {
-	bottom: 32%;
-	animation: myfirst-icon-7 0.8s 1;
-}
-@keyframes myfirst-icon-7 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 32%;}
-}
-
-.icon-8 {
-	bottom: 28%;
-	animation: myfirst-icon-8 0.6s 1;
-}
-@keyframes myfirst-icon-8 {
-  0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 28%;}
-}
- */
- 
 .icon-1 {
-	bottom: 56%;
+	bottom: 60%;
 	animation: myfirst-icon-1 0.2s 1;
 }
 @keyframes myfirst-icon-1 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 56%;}
+100% {background: transparent; left: 8px; bottom: 60%;}
 }
 
 .icon-2 {
-	bottom: 52%;
+	bottom: 54.5%;
 	animation: myfirst-icon-2 0.5s 1;
 }
 @keyframes myfirst-icon-2 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 52%;}
+100% {background: transparent; left: 8px; bottom: 54.5%;}
 }
 
 .icon-3 {
-	bottom: 48%;
+	bottom: 49%;
 	animation: myfirst-icon-3 0.9s 1;
 }
 @keyframes myfirst-icon-3 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 48%;}
+100% {background: transparent; left: 8px; bottom: 49%;}
 }
 
 .icon-4 {
-	bottom: 44%;
+	bottom: 43.5%;
 	animation: myfirst-icon-4 1.1s 1;
 }
 @keyframes myfirst-icon-4 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 44%;}
+100% {background: transparent; left: 8px; bottom: 43.5%;}
 }
 
 .icon-5 {
-	bottom: 40%;
+	bottom: 37%;
 	animation: myfirst-icon-5 1.3s 1;
 }
 @keyframes myfirst-icon-5 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 40%;}
+100% {background: transparent; left: 8px; bottom: 37%;}
 }
 
 .icon-6 {
-	bottom: 36%;
+	bottom: 31.5%;
 	animation: myfirst-icon-6 1.5s 1;
 }
 @keyframes myfirst-icon-6 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
-100% {background: transparent; left: 8px; bottom: 36%;}
+100% {background: transparent; left: 8px; bottom: 31.5%;}
 }
 
 .icon-7 {
@@ -2710,14 +2671,6 @@ blockquote {
 @keyframes myfirst-icon-8 {
   0%  {background: transparent; left: 8px; bottom: 0px;}
 100% {background: transparent; left: 8px; bottom: 28%;}
-}
-
-
-.social-media:hover {
-	background: transparent;
-	opacity: 1;
-	color: #fff;
-	transform: scale(1.5);
 }
 
 
@@ -2759,7 +2712,23 @@ blockquote {
 	background-color: transparent;
 }
 
+@keyframes slideup-top-btn {
+  0%  {background: transparent; right: 5px; bottom: 0px;}
+100% {background: transparent; right: 5px; bottom: 50%;}
+}
 
+@-webkit-keyframes slideup-top-btn {
+    0%  {background: transparent; right: 5px; bottom: 0px;}
+100% {background: transparent; right: 5px; bottom: 50%;}
+}
+
+#slideUp {
+  animation-name: slideup-top-btn;
+  -webkit-animation-name: slideup-top-btn;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  visibility: visible;
+}
 
 
 /*--------------------------------------------------------------
@@ -2781,7 +2750,7 @@ blockquote {
 	border-bottom-right-radius: 10px;
 	border-top-color:transparent;
 	opacity: 0.3;
-	font-size: 10px; 
+	font-size: 10px; 	
 	animation-name: slidedown-btm-btn;
 	animation-duration: 1s;
     animation-timing-function: ease;
@@ -2791,95 +2760,28 @@ blockquote {
     animation-fill-mode: none;
     animation-play-state: running;
 }
+
+.BtmBtn:hover {
+    padding: 5px 5px;
+    opacity: 1;
+    /* background-color: #57cbcc; */
+    background-color: transparent;
+}
+
 @keyframes slidedown-btm-btn {
   0%  {background: transparent; right: 5px; bottom: 100%;}
 100% {background: transparent; right: 5px; bottom: 46%;}
 }
-.BtmBtn:hover {
-	padding: 5px 5px;
-	opacity: 1;
-	/* background-color: #57cbcc; */ /* light blue background on hover */
-	background-color: transparent;
+@-webkit-keyframes slidedown-btm-btn {
+    0%  {background: transparent; right: 5px; bottom: 100%;}
+100% {background: transparent; right: 5px; bottom: 46%;}
 }
 
-
-#slideUp {
-  animation-name: slideup-top-btn;
-  -webkit-animation-name: slideup-top-btn;
+#slideDown {
+  animation-name: slidedown-btm-btn;
+  -webkit-animation-name: slidedown-btm-btn;
   animation-duration: 1s;
   -webkit-animation-duration: 1s;
   visibility: visible;
 }
-
-@keyframes slideup-top-btn {
-  0%  {background: transparent; right: 5px; bottom: 0px;}
-100% {background: transparent; right: 5px; bottom: 50%;}
-}
-
-@-webkit-keyframes slideup-top-btn {
-    0%  {background: transparent; right: 5px; bottom: 0px;}
-100% {background: transparent; right: 5px; bottom: 50%;}
-}
-
-
-.buttton {
-	display: none; /* Hidden by default */
-	position: fixed; /* Fixed/sticky position */
-	bottom: -1%; /* Place the button at the page */
-	left: 150px; /* Place the button from the right */
-	z-index: 99; /* Make sure it does not overlap */
-	border: 2px outset;
-	outline: none; 
-	background-color: transparent; 
-	color: white; 
-	cursor: pointer; /* Add a mouse pointer on hover */
-	padding: 5px 5px; 
-	border-radius: 10px;
-	/* border-top-color:transparent; */
-	opacity: 01;
-	font-size: 10px; 
-}
-.fade-in {
-    animation-name: fadeIn;
-}
-
-.fade-out {
-    animation-name: fadeOut;
-}
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(startYposition);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(endYposition);
-    }
-}
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: translateY(startYposition);
-    } 
-    100% {
-        opacity: 0;
-        transform: translateY(endYposition);
-    }
-}
-.slider {
-	overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
-
-	transition-property: all;
-	transition-duration: .5s;
-	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-}
-
-.slider.closed {
-	max-height: 0;
-}
-
-
 /*# sourceMappingURL=style.css.map */

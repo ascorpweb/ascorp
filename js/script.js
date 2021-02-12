@@ -59,7 +59,6 @@
 		fixedBgPos: true
 	});
 
-
 	// counterUp
 	function counter() {
 		var oTop;
@@ -72,18 +71,23 @@
 					countTo = $this.attr('data-count');
 				$({
 					countNum: $this.text()
-				}).animate({
+					}).animate(
+					{
 					countNum: countTo
-				}, {
+					}, 
+				
+					{
 					duration: 500,
 					easing: 'swing',
-					step: function () {
+					step: function () 
+						{
 						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
+						},
+					complete: function () 
+						{
 						$this.text(this.countNum);
-					}
-				});
+						}
+					});
 			});
 		}
 	}
@@ -95,30 +99,30 @@
 
 
 	//   magnific popup video
-	$('.popup-video').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-zoom-in',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: true
-	});
+		$('.popup-video').magnificPopup({
+			disableOn: 700,
+			type: 'iframe',
+			mainClass: 'mfp-zoom-in',
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: true
+			});
 
-	/* ========================================================================= */
-	/*	Testimonial Carousel
-	/* =========================================================================  */
+/* ========================================================================= */
+/*	Testimonial Carousel
+/* =========================================================================  */
 	//Init the carousel
-	$('#testimonials').slick({
-		infinite: true,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 4000
-	});
+		$('#testimonials').slick({
+			infinite: true,
+			arrows: false,
+			autoplay: true,
+			autoplaySpeed: 4000
+			});
 
 
-	/* ========================================================================= */
-	/*	Smooth Scroll
-	/* ========================================================================= */
+/* ========================================================================= */
+/*	Smooth Scroll
+/* ========================================================================= */
 	$('a.nav-link, .smooth-scroll').click(function (e) {
 		if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
 			var target = $(this.hash);
@@ -135,72 +139,66 @@
 					} else {
 						$target.attr('tabindex', '-1');
 						$target.focus();
-					}
-				});
+						}
+					});
+				}
 			}
-		}
-	});
-
-
-})(jQuery);
-// End Jquery Function
+		});
+	})(jQuery);
+	// End Jquery Function
 
 
 /* ========================================================================= */
 /*	Animated section
 /* ========================================================================= */
 
-var wow = new WOW({
-	offset: 100, // distance to the element when triggering the animation (default is 0)
-	mobile: false // trigger animations on mobile devices (default is true)
-});
-wow.init();
+		var wow = new WOW({
+			offset: 100, // distance to the element when triggering the animation (default is 0)
+			mobile: false // trigger animations on mobile devices (default is true)
+			});
+			wow.init();
 
 /* ========================================================================= */
-/*	Navbar Menu Collapse after click on options
+/*	Navbar Menu Collapse
 /* ========================================================================= */
 
-//
-   $('.navbar-collapse a').click(function(){
+	//Navbar Menu Collapse after click on options
+
+   		$('.navbar-collapse a').click(function(){
             $(".navbar-collapse").collapse('hide');
-  });
+ 			 });
         
-//Navbar Menu Collapse after click anywhere 
+	//Navbar Menu Collapse after click anywhere 
+
 		$('body').click(function(){
             $(".navbar-collapse").collapse('hide');
-  });
+ 			});
   
-  
-//Navbar Menu Collapse on scrolling down   
- 
-  
+	//Navbar Menu Collapse on scrolling down or up
+	
 /* ========================================================================= */
 /*   Top and Bottom buttons
 /* ========================================================================= */ 
- //Get the button:
-  topbutton = document.getElementById("TopBtn");
-    Btmbutton = document.getElementById("BtmBtn");
+		//Get the button:
+	var topbutton = document.getElementById("TopBtn");
+	var Btmbutton = document.getElementById("BtmBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-	window.onscroll = function() {scrollFunction()};
-
+		//When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {
+			scrollFunction()
+		};
+	
 	function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    topbutton.style.display = "inline";
-     Btmbutton.style.display = "inline";
-  }
-   else {
-   topbutton.style.display = "none";
-    Btmbutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-  document.body.scrollTop =0; // For Safari
-  document.documentElement.scrollTop =0; // For Chrome, Firefox, IE and Opera
-}
-
+			if (document.body.scrollTop > 20
+					|| document.documentElement.scrollTop > 20) {
+				topbutton.style.display = "inline";
+				Btmbutton.style.display = "inline";
+			} else {
+				
+				$('.BtmBtn').hide(1300);
+				$('.TopBtn').hide(1300);
+			}
+		}
 
 /* ========================================================================= */
 /*	Social Media Floating Icons
@@ -210,11 +208,7 @@ wow.init();
      $('.social-media').css({'display':'inline'});
    
     } else{
-      $('.social-media').animate({
-    opacity: 0.25,
-    left: "+=50",
-    height: "toggle"
-  }, 5000);
+      $('.social-media').hide(800);
     }
   });
 
