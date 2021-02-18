@@ -2566,7 +2566,7 @@ blockquote {
 
 @media ( max-width : 1080px) {
 	.social-media {
-	font-size:45px;
+	font-size:35px;
 	opacity: 0.3;	
 }
 
@@ -2574,21 +2574,21 @@ blockquote {
 
 @media ( max-width : 992px) {
 	.social-media {
-	font-size:20px;
+	font-size:30px;
 	opacity: 0.3;	
 }
 
 }
 @media ( max-width : 580px) {
 	.social-media {
-	font-size:30px;
+	font-size:25px;
 	opacity: 0.3;	
 }
 }
 
 @media ( max-width : 480px) {
 	.social-media {
-	font-size:25px;
+	font-size:20px;
 	opacity: 0.3;
 }
 }
