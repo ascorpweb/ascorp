@@ -664,14 +664,14 @@ End Sticky Navigation==================================== -->
 						<div class="form-elements">
 							<fieldset class="form-group">
 								<label for="name">Name:</label> <input id="name" name="name"
-									type="text" required placeholder="Your Name"
-									class="form-control" data-rule="minlen:10"
-									data-msg="Please enter a valid phone number" />
+									type="text" placeholder="Your Name" class="form-control"
+									data-rule="minlen:4" data-msg="Please enter your name" />
+								<div class="validate"></div>
 							</fieldset>
 							<fieldset class="form-group">
 								<label for="name">Mobile:</label> <input id="mobile"
-									name="mobile" type="text" required
-									placeholder="Your Mobile Number" class="form-control" />
+									name="mobile" type="text" placeholder="Your Mobile Number"
+									class="form-control" />
 							</fieldset>
 
 							<fieldset class="form-group">
@@ -786,9 +786,7 @@ End Sticky Navigation==================================== -->
 
 				<div class="col-lg-5">
 					<div class="copyright">
-						<span>Copyright &copy; <script>
-							document.write(new Date().getFullYear())
-						</script>,
+						<span>Copyright &copy; <span id="copyright-year"></span>,
 						</span><a href="http://ascorp.live/" style="color: white"><strong>Ascorp.</strong></a>
 						All Rights Reserved.
 						<!--<br><span>Designed by
@@ -874,6 +872,8 @@ End Sticky Navigation==================================== -->
 	<!-- Submit the Form to Google Using "AJAX" -->
 	<script data-cfasync="false" type="text/javascript"
 		src="js/form-submission-handler.js"></script>
+	<script src="js/validate.js"></script>
+
 </body>
 
 </html>
