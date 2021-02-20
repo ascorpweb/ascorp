@@ -670,15 +670,16 @@ End Sticky Navigation==================================== -->
 						<div class="form-elements">
 							<fieldset class="form-group">
 								<label for="name">Name:</label> <input id="name" name="name"
-									type="text" placeholder="Your Name" class="form-control"
-									data-rule="minlen:4" data-msg="Please enter your name" />
-								<div class="validate"></div>
+									type="text" required placeholder="Your Name"
+									class="form-control" />
+								<!-- data-rule="minlen:4" data-msg="Please enter your name"
+								<div class="validate"></div> -->
 							</fieldset>
 
 							<fieldset class="form-group">
 								<label for="mobile">Mobile:</label> <input id="mobile"
 									name="mobile[main]" type="tel" placeholder="Moblie"
-									class="form-control">
+									maxlength="13" required class="form-control">
 							</fieldset>
 
 							<fieldset class="form-group">
