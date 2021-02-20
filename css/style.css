@@ -108,7 +108,7 @@ a:focus, a:hover {
 	border-radius: 0;
 	padding: 5px 10px;
 	border: 0 none;
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .form-control:focus {
@@ -117,22 +117,22 @@ a:focus, a:hover {
 
 .form-control::-webkit-input-placeholder {
 	/*  Chrome, Safari, Opera  */
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .form-control:-moz-placeholder {
 	/* Firefox 18- */
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .form-control::-moz-placeholder {
 	/* Firefox 19+ */
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .form-control:-ms-input-placeholder {
 	/*  Internet Explorer  */
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .border {
@@ -1216,7 +1216,7 @@ scale3D
 	background-color: transparent;
 	border: 1px solid rgba(236, 239, 241, 0.07);
 	height: 40px;
-	color: #ddd;
+	color: white;/* Typing text Color */
 }
 
 .contact-form textarea.form-control {
