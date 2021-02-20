@@ -203,25 +203,64 @@
 /* ========================================================================= */
 /*	Social Media Floating Icons
 /* ========================================================================= */
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 20) {
-     $('.social-media').css({'display':'inline'});
-   
-    } else{
-      $('.social-media').hide(800);
-    }
-  });
+  		
+  		$(window).scroll(function() {
+   		 if ($(this).scrollTop() > 20) {
+    	 $('.social-media').css({'display':'inline'});
+    		} else{
+    	  $('.social-media').hide(800);
+   		}
+  	});
 
 
 /* ========================================================================= */
 /*	Copyright Year
 /* ========================================================================= */
-window.addEventListener('load', (
-    function () {
-        document.getElementById('copyright-year').appendChild(
-            document.createTextNode(
+	window.addEventListener('load', (
+    	function () {
+       	 document.getElementById('copyright-year').appendChild(
+      	      document.createTextNode(
                 new Date().getFullYear()
             )
-        );
-    }
-));
+       	 );
+ 	   }
+	));
+
+/* ========================================================================= */
+/*	International Telephone Input
+/* ========================================================================= */
+	var input = document.querySelector("#mobile");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+    autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+	hiddenInput: "full",
+      // initialCountry: "auto",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+	preferredCountries:["in"],
+	separateDialCode: true,
+      utilsScript: "plugins/international_telephone_input/js/utils.js",
+    });
+    
+
+$("form.gform").submit(function() {
+  var full_number = input.getNumber(intlTelInputUtils.numberFormat.E164);
+$("input[name='mobile[full]'").val(full_number);
+  alert(full_number)
+  
+});
+
+
