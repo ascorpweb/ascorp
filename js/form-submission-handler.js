@@ -69,39 +69,12 @@
             return false;
         }
 
-        //<<------ Name Validation ------>>
-        // Get the value of the input field with id.
-        var contactName = document.getElementById("name").value;
-
-        // name can’t be empty.
-        if (contactName == null || contactName == "") {
-            alert("Name can't be blank");
-            return false;
-        }
-
-        //minmum length of name.
-        if (contactName.length < 3) {
-            alert("Name is too short.")
-            return false;
-        }
-
-        //allowed only letters (both uppercase or lowercase).
-        function validName(contactName) {
-            var letters = /^([A-Za-z]{3,20})[ ][A-Za-z]{3,20}[ ][A-Za-z]{3,20}$/;
-            return letters.test(contactName);
-        }
-
-        // if Name is invalid show error.
-        if (contactName && !validName(contactName)) {
-            alert("Name is invalid. Allowed only letters (uppercase or lowercase)")
-            return false;
-        }
 
         //<<------ Mobile Number Validation ------>>
         // Get the value of the input field with id.
         var contactNumber = document.getElementById("mobile").value;
 
-        // Contact Number can’t be empty.
+        //   Number can’t be empty.
         if (contactNumber == null || contactNumber == "") {
             alert("Contact Number can't be blank");
             return false;
@@ -113,7 +86,7 @@
         }
         //Repeation check. ^(?!0{8})[A-Za-z0-9]{8}$
 
-        if (contactNumber == 0000000000 || contactNumber == 00000000000 || contactNumber == 000000000000) {
+        if (contactNumber == /^0{10,}$/) {
             alert("Contact Number is invalid");
             return false;
         }
