@@ -457,7 +457,8 @@ End Sticky Navigation==================================== -->
                         <p>
                             Since the last decade, the <strong>cloud</strong> has become an integral part of any IT strategy. At <strong>Ascorp</strong>, we provide client specific various
                             <strong>cloud</strong> services to enhance the product <strong>scalability</strong> within
-                            <strong>budget</strong>. We support our clients in the transition process to scale up their products and applications. <strong>Ascorp</strong> prefers a <strong>cloud</strong> environment that matches the defined goals of <strong>cost reduction</strong>                            and <strong>performance
+                            <strong>budget</strong>. We support our clients in the transition process to scale up their products and applications. <strong>Ascorp</strong> prefers a <strong>cloud</strong> environment that matches the defined goals of <strong>cost reduction</strong>                            and
+                            <strong>performance
 								efficiency</strong>.
                         </p>
                     </div>
@@ -597,30 +598,28 @@ End Sticky Navigation==================================== -->
 
                         <div class="form-elements">
                             <fieldset class="form-group">
-                                <label for="name">Name:</label><input id="name" name="name" type="text" required placeholder="Your Name" class="form-control" />
-                                <!-- data-rule="minlen:4" data-msg="Please enter your name"
-								<div class="validate"></div> -->
+                                <label for="name">Name :</label><span style="color: red;font-size: larger;">*</span>
+                                <input id="name" name="name" type="text" placeholder="Your Name" class="form-control" />
                             </fieldset>
 
                             <fieldset class="form-group">
-                                <label for="mobile">Mobile:</label><input id="mobile" name="mobile[main]" type="tel" placeholder="Moblie" maxlength="13" required class="form-control">
+                                <label for="mobile">Contact Number :</label><span style="color: red;font-size: larger;">*</span>
+                                <input id="mobile" name="mobile[main]" type="tel" placeholder="Your Contact Number" maxlength="12" class="form-control">
                             </fieldset>
 
                             <fieldset class="form-group">
-                                <label for="email">Your Email:</label>
-                                <input id="email" name="email" type="email" required placeholder="Your Email" class="form-control" />
+                                <label for="email">Email :</label><span style="color: red;font-size: larger;">*</span>
+                                <input id="email" name="email" type="email" placeholder="Your Email" class="form-control" />
                                 <span class="email-invalid" style="display: none"> Must be a valid email address</span>
                             </fieldset>
 
-
                             <fieldset class="form-group">
-                                <label for="message">Message:</label>
+                                <label for="message">Message :&nbsp;</label>
                                 <textarea id="message" name="message" rows="6" spellcheck="false" placeholder="Tell us what's on your mind..." class="form-control"></textarea>
                             </fieldset>
 
-                            <button type="submit" id="contact-submit" class="btn btn-transparent">Send</button>
+                            <button type="submit" id="contact-submit" class="btn btn-transparent">Submit</button>
                         </div>
-
 
                         <!-- Customise the Thankyou Message People See when they submit the form: -->
                         <div class="thankyou_message">

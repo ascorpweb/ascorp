@@ -929,10 +929,16 @@ a:hover {
 
 #contact-submit {
     border: 1px solid rgba(236, 239, 241, 0.07);
-    background: #57cbcc;
-    padding: 12px 0;
-    width: 100%;
+    background: transparent;
+    padding: 5px 0;
+    width: 20%;
     margin: 0;
+    border-radius: 5px;
+    margin-left: 40%;
+}
+
+#contact-submit:hover {
+    background: #57cbcc;
 }
 
 .google-map #map_canvas {
