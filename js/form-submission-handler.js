@@ -69,14 +69,28 @@
             return false;
         }
 
+        //<<------ Name Validation ------>>
+        // Get the value of the input field with id.
+        var contactName = document.getElementById("name").value;
 
+        //allowed only letters (uppercase or lowercase).
+        function validName(contactName) {
+            var letters = /[\.A-Za-z ]$/;
+            return letters.test(contactName);
+        }
+
+        // if Name is invalid show error.
+        if (contactName && !validName(contactName)) {
+            alert("Name is invalid. Only letters (uppercase or lowercase) are allowed.")
+            return false;
+        }
         //<<------ Mobile Number Validation ------>>
         // Get the value of the input field with id.
         var contactNumber = document.getElementById("mobile").value;
 
         //   Number can’t be empty.
         if (contactNumber == null || contactNumber == "") {
-            alert("Contact Number can't be blank");
+            alert("Contact Number can't be blank.");
             return false;
         }
         //minmum length 10 digits.
@@ -84,31 +98,29 @@
             alert("Contact Number can't be less than 10 digits.")
             return false;
         }
-        //Repeation check. ^(?!0{8})[A-Za-z0-9]{8}$
 
-        if (contactNumber == /^0{10,}$/) {
-            alert("Contact Number is invalid");
+        // if Contact Number is not valid show error.
+        if (contactNumber == 0000000000 || 00000000000 || 000000000000) {
+            alert("Contact Number is invalid. All zeros are not allowed.")
             return false;
         }
-
         //Validation will remove all non-digits, no comma, no spaces,no punctuation 
         //and there will be no + sign in front the number.
         function validMobile(contactNumber) {
-            var phoneno = /^\d{10,12}$/; //compare 10 to 12 digits contact number.
+            var phoneno = /^\d{10,13}$/; //compare 10 to 13 digits contact number.
             return phoneno.test(contactNumber);
         }
 
         // if Contact Number is not valid show error.
         if (contactNumber && !validMobile(contactNumber)) {
-            alert("Contact Number is invalid. Please remove spaces, alphabets and non-digits")
+            alert("Contact Number is invalid. Please remove spaces, alphabets or all non-digits.")
             return false;
         }
-
 
         // <<------ Email Validation ------>>
         // Email can’t be empty.
         if (data.email == null || data.email == "") {
-            alert("Email can't be blank");
+            alert("Email can't be blank.");
             return false;
         }
         // if Email is not valid show error.

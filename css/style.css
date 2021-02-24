@@ -830,7 +830,7 @@ a:hover {
 
 @media ( max-width: 768px) {
     .about-2 .content-block {
-        padding: 15px;
+        padding: 15px 35px;
     }
 }
 
@@ -906,6 +906,16 @@ a:hover {
 
 .contact-form {
     margin-bottom: 15px;
+}
+
+
+/* for proper visible form without overlapping floating social media icons*/
+
+@media (max-width: 992px) {
+    .contact-form {
+        margin-left: 21px;
+        margin-right: 21px;
+    }
 }
 
 .contact-form .form-control {
@@ -2666,6 +2676,31 @@ blockquote {
 .thankyou_message {
     margin: 100px 0 120px;
     display: none;
+}
+
+
+/* for proper visible form without overlapping floating social media icons */
+
+.title-paragragh {
+    padding: 15px;
+}
+
+
+/* for proper visible form without overlapping floating social media icons */
+
+.con-marg {
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+
+/* for proper visible form without overlapping floating social media icons */
+
+@media ( max-width: 768px) {
+    .con-marg {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
 }
 
 
