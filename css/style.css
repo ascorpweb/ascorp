@@ -192,7 +192,7 @@ a:hover {
 
 .bg-one {
     background-color: #353b43;
-    padding: 7px 0;
+    padding-top: 7px;
 }
 
 .bg-dark {
@@ -2678,6 +2678,11 @@ blockquote {
     display: none;
 }
 
+.thankyou_message a {
+    font-size: 10px;
+    margin-left: 2%;
+}
+
 
 /* for proper visible form without overlapping floating social media icons */
 
@@ -2701,6 +2706,80 @@ blockquote {
         padding-left: 35px;
         padding-right: 35px;
     }
+}
+
+.copyright-container {
+    background-color: #1d2024;
+    max-width: 100%;
+}
+
+.margbt-10 {
+    margin: 10px 0;
+}
+
+@media (max-width: 992px) {
+    .margbt-10 {
+        margin: 10px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .marglr {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+.margl-10 {
+    margin-left: 10px;
+}
+
+.margr-10 {
+    margin-right: 10px;
+}
+
+.margt-10 {
+    margin-top: 10px;
+}
+
+.margb-10 {
+    margin-bottom: 10px;
+}
+
+.clr {
+    color: #afbac4;
+}
+
+.clr i {
+    color: white;
+}
+
+.clr a {
+    color: #afbac4;
+}
+
+.clr a:hover {
+    color: #57cbcc;
+}
+
+.pd-0 {
+    padding: 0;
+}
+
+.pd-l {
+    left: 10%;
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    .pd-l {
+        left: 0;
+    }
+}
+
+.mandatory-star {
+    color: red;
+    font-size: larger;
 }
 
 
